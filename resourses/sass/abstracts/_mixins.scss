@@ -1,0 +1,14 @@
+@mixin clearFix{
+  &:after{
+    content: '';
+    display: table;
+    clear: both;
+  }
+}
+
+
+@mixin flex(){
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

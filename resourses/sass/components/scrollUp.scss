@@ -1,0 +1,29 @@
+.scrollUpBtn{
+
+  position: fixed;
+  bottom: 3rem;
+  right: 3rem;
+  background-color: $color-dark-blue;
+
+  @include flex;
+
+  transition: all 0.2s ease-in-out;
+  visibility: hidden;
+  opacity: 0;
+
+  width: 6rem;
+  height: 5rem;
+  //
+  padding: 1rem;
+  //
+  //
+  transform: rotate(-90deg);
+  z-index: 999;
+
+  img{
+    width: 2.5rem;
+  }
+  &:hover{
+    cursor: pointer;
+  }
+}

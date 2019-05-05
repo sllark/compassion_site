@@ -1,0 +1,22 @@
+{
+  "name": "013-natours",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch-sass": "node-sass sass/main.scss css/style.css -w",
+    "runServer": "live-server",
+    "start": "npm-run-all --parallel runServer watch-sass",
+    
+    "compile-sass": "node-sass sass/main.scss css/style.css",
+    "concat-sass": "concat -o css/style.concat.css css/style.css",
+    "prefix-css": "postcss css/style.concat.css --use autoprefixer --output css/style.prefix.css",
+    "compress-css":"node-sass css/style.prefix.css css/style.css --output-style compressed",
+    "build-css": "npm-run-all compile-sass concat-sass prefix-css compress-css"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.11.0"
+  }
+}

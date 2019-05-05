@@ -1,0 +1,76 @@
+.contact__form{
+
+  @include flex;
+  flex-flow: column;
+
+  input,textarea{
+    height: 6.5rem;
+    margin: 1rem;
+    padding: 0 1rem 0;
+    background-color: rgba($color-grey-light3,0.2);
+    font-size: 1.5rem;
+    color: white;
+    &::placeholder{
+      color: $color-grey-light2;
+      font-weight: 500;
+    }
+  }
+  &__name{
+    width: 50.5rem;
+
+    @media screen and  (max-width: 28.125em) { //450px
+      width: 95%;
+    }
+  }
+  &__email{
+    width: 24rem;
+    @media screen and  (max-width: 28.125em) { //450px
+      width: 45%;
+    }
+
+    @media screen and  (max-width: 25em) { //400px
+      width: 95%;
+    }
+  }
+
+  &__sub{
+    width: 24rem;
+    @media screen and  (max-width: 28.125em) { //450px
+      width: 45%;
+    }
+    @media screen and  (max-width: 25em) { //400px
+      width: 95%;
+    }
+  }
+
+  textarea{
+    height: 15rem;
+    width: 50.5rem;
+    padding: 1.5rem 1rem;
+    @media screen and  (max-width: 28.125em) { //450px
+      width: 95%;
+    }
+  }
+
+  input[type='button']{
+    display: block;
+    width: 50.5rem;
+    background-color: $color-primary-dark;
+    color: black;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 2.3rem;
+
+    @media screen and  (max-width: 28.125em) { //450px
+      width: 95%;
+    }
+    &:hover{
+      cursor: pointer;
+      background-color: rgba(247, 233, 0, 0.89);
+    }
+
+  }
+
+
+
+}
